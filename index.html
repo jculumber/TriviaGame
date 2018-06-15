@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <title>Totally Trivial Trivia</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center"><img src="assets/images/cubs-logo.jpg"> Totally Trivial Trivia! <img src="assets/images/cubs-logo.jpg"></h1>
+        </div>
+        <div class="row part1">
+            <button id="start" class="btn btn-primary btn-lg w-25 m-auto">Start</button>
+        </div>
+        <div class="row part2 my-5">
+            <div id="timeRemain" class="col-md-12 text-center m-auto">
+                <h3>Time Remaining: 60 seconds</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container part2">
+        <div class="row mt-5">
+            <!--Question #1-->
+            <div class="col-md-12 text-center mx-auto mt-5">
+                <h3 id="questionOne">Question #1</h3>
+            </div>
+            <div class="col-md-12 text-center mt-3 mx-auto">
+                <div class="form-check form-check-inline mb-5">
+                    <input class="form-check-input" type="radio" name="question1" value="option1">
+                    <label class="form-check-label" id="1-1" for="question1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question1" value="option2">
+                    <label class="form-check-label" id="1-2" for="question1">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question1" value="option3">
+                    <label class="form-check-label" id="1-3" for="question1">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question1" value="option4">
+                    <label class="form-check-label" id="1-4" for="question1">4</label>
+                </div>
+            </div>
+            <!--Question #2-->
+            <div class="col-md-12 text-center m-auto">
+                <h3 id="questionTwo">Question #2</h3>
+            </div>
+            <div class="col-md-12 text-center mt-3 mx-auto">
+                <div class="form-check form-check-inline mb-5">
+                    <input class="form-check-input" type="radio" name="question2" value="option1">
+                    <label class="form-check-label" id="2-1" for="question2">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question2" value="option2">
+                    <label class="form-check-label" id="2-2" for="question2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question2" value="option3">
+                    <label class="form-check-label" id="2-3" for="question2">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question2" value="option4">
+                    <label class="form-check-label" id="2-4" for="question2">4</label>
+                </div>
+            </div>
+            <!--Question #3-->
+            <div class="col-md-12 text-center m-auto">
+                <h3 id="questionThree">Question #3</h3>
+            </div>
+            <div class="col-md-12 text-center mt-3 mx-auto">
+                <div class="form-check form-check-inline mb-5">
+                    <input class="form-check-input" type="radio" name="question3" value="option1">
+                    <label class="form-check-label" id="3-1" for="question3">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question3" value="option2">
+                    <label class="form-check-label" id="3-2" for="question3">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question3" value="option3">
+                    <label class="form-check-label" id="3-3" for="question3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question3" value="option4">
+                    <label class="form-check-label" id="3-4" for="question3">4</label>
+                </div>
+            </div>
+            <!--Question #4-->
+            <div class="col-md-12 text-center m-auto">
+                <h3 id="questionFour">Question #4</h3>
+            </div>
+            <div class="col-md-12 text-center mt-3 mx-auto">
+                <div class="form-check form-check-inline mb-5">
+                    <input class="form-check-input" type="radio" name="question4" value="option1">
+                    <label class="form-check-label" id="4-1" for="question4">1</label>
+                    </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question4" value="option2">
+                    <label class="form-check-label" id="4-2" for="question4">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question4" value="option3">
+                    <label class="form-check-label" id="4-3" for="question4">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question4" value="option4">
+                    <label class="form-check-label" id="4-4" for="question4">4</label>
+                </div>
+            </div>
+            <!--Question #5-->
+            <div class="col-md-12 text-center m-auto">
+                <h3 id="questionFive">Question #5</h3>
+            </div>
+            <div class="col-md-12 text-center mt-3 mx-auto">
+                <div class="form-check form-check-inline mb-5">
+                    <input class="form-check-input" type="radio" name="question5" value="option1">
+                    <label class="form-check-label" id="5-1" for="question5">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question5" value="option2">
+                    <label class="form-check-label" id="5-2" for="question5">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question5" value="option3">
+                    <label class="form-check-label" id="5-3" for="question5">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question5" value="option4">
+                    <label class="form-check-label" id="5-4" for="question5">4</label>
+                </div>
+            </div>                   
+            <!--Question #6-->
+            <div class="col-md-12 text-center m-auto">
+                <h3 id="questionSix">Question #6</h3>
+            </div>
+            <div class="col-md-12 text-center mt-3 mx-auto">
+                <div class="form-check form-check-inline mb-5">
+                    <input class="form-check-input" type="radio" name="question6" value="option1">
+                    <label class="form-check-label" id="6-1" for="question6">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question6" value="option2">
+                    <label class="form-check-label" id="6-2" for="question6">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question6" value="option3">
+                    <label class="form-check-label" id="6-3" for="question6">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question6" value="option4">
+                    <label class="form-check-label" id="6-4" for="question6">4</label>
+                </div>
+            </div>   
+            <!--Question #7-->
+            <div class="col-md-12 text-center m-auto">
+                <h3 id="questionSeven">Question #7</h3>
+            </div>
+            <div class="col-md-12 text-center mt-3 mx-auto">
+                <div class="form-check form-check-inline mb-5">
+                    <input class="form-check-input" type="radio" name="question7" value="option1">
+                    <label class="form-check-label" id="7-1" for="question7">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question7" value="option2">
+                    <label class="form-check-label" id="7-2" for="question7">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question7" value="option3">
+                    <label class="form-check-label" id="7-3" for="question7">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question7" value="option4">
+                    <label class="form-check-label" id="7-4" for="question7">4</label>
+                </div>
+            </div>                     
+            <!--Question #8-->
+            <div class="col-md-12 text-center m-auto">
+                <h3 id="questionEight">Question #8</h3>
+            </div>
+            <div class="col-md-12 text-center mt-3 mx-auto">
+                <div class="form-check form-check-inline mb-5">
+                    <input class="form-check-input" type="radio" name="question8" value="option1">
+                    <label class="form-check-label" id="8-1" for="question8">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question8" value="option2">
+                    <label class="form-check-label" id="8-2" for="question8">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question8" value="option3">
+                    <label class="form-check-label" id="8-3" for="question8">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question8" value="option4">
+                    <label class="form-check-label" id="8-4" for="question8">4</label>
+                </div>
+            </div>                        
+            <!--Question #9-->
+            <div class="col-md-12 text-center m-auto">
+                    <h3 id="questionNine">Question #9</h3>
+            </div>
+            <div class="col-md-12 text-center mt-3 mx-auto">
+                <div class="form-check form-check-inline mb-5">
+                    <input class="form-check-input" type="radio" name="question9" value="option1">
+                    <label class="form-check-label" id="9-1" for="question9">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question9" value="option2">
+                    <label class="form-check-label" id="9-2" for="question9">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question9" value="option3">
+                    <label class="form-check-label" id="9-3" for="question9">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="question9" value="option4">
+                    <label class="form-check-label" id="9-4" for="question9">4</label>
+                </div>                          
+                <div class="row">
+                    <button id="finish" type="submit" class="btn btn-primary btn-lg w-25 mx-auto mb-5 mt-3">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container part3">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5 mb-3">
+                <h1 id="allDone">All Done!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 id="correctAnswers"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 id="incorrectAnswers"></h3>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-12 text-center mb-5">
+                <h3 id="notAnswered"></h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

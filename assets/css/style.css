@@ -1,0 +1,20 @@
+body {
+    background-color: #005397;
+}
+
+.part2, .part3 {
+    background-color: white;
+}
+
+.jumbotron {
+    background-color: #e81433;
+    color: white;
+}
+
+img {
+    width: 10%;
+}
+
+button {
+    height: 200%;
+}
