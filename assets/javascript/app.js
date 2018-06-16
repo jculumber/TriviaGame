@@ -139,12 +139,16 @@ var checkAnswers = function() {
 };
 $("input").on("click", checkAnswers)
 
-// Function that runs when player clicks on an answer
+// Function that runs when player clicks on answers
 function playerChoice() {
     clearInterval(intervalId);
     hideSection(".part1");
     hideSection(".part2");
     showSection(".part3");
+    correct = 0;
+    incorrect = 0;
+    unanswered = 0;
+
     for (i = 0; i < playerAnswer.length; i++) {
         if (playerAnswer[i] == correctAnswer[i]) {
             correct++;          
@@ -163,6 +167,7 @@ function playerChoice() {
         console.log(correct);
         console.log(incorrect);
         console.log(unanswered);
+        console.log(number);
     
 };
 
@@ -171,10 +176,12 @@ function playerChoice() {
 
 //  The run function sets an interval
 function run() {
+    number = 60;
     clearInterval(intervalId);
+    setTimeout(hideSection(".part1"), 1000);
+    setTimeout(showSection(".part2"), 1000);
     intervalId = setInterval(countdown, 1000);
-    hideSection(".part1");
-    showSection(".part2");
+    
     checkAnswers();
 };
 
@@ -195,12 +202,13 @@ function countdown() {
     };
 };
 
-// MAIN PROCESS (THIS IS THE CODE THAT CONTROLS WHAT IS ACTUALLY RUN)
-// =========================================================================================
-$(document).ready(function() {
+// Function that starts/restarts the game when button is clicked
+function startGame() {
     
     hideSection(".part2");
     hideSection(".part3");
+    showSection(".part1");
+    
 
 // When the Start button is clicked, run the countdown function
 $("#start").on("click", run);
@@ -208,4 +216,13 @@ $("#start").on("click", run);
 // When the Submit button is clicked, run playerChoice function
 $("#finish").on("click", playerChoice);
 
+};
+
+// MAIN PROCESS (THIS IS THE CODE THAT CONTROLS WHAT IS ACTUALLY RUN)
+// =========================================================================================
+$(document).ready(function() {
+    
+    startGame();
+
 });
+$("#restart").on("click", startGame);
